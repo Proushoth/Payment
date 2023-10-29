@@ -15,9 +15,6 @@ public class LedgerService {
     @Autowired
     private PaymentRepository paymentRepository;
 
-    /**
-     * run when payment is CREATED
-     */
     public void createLedgerEntry(String id, PaymentDto payment) {
 
 
@@ -32,10 +29,6 @@ public class LedgerService {
                 payment.getDescription()));
     }
 
-    /**
-     * run when payment is PAID
-     * @returns int id of the order
-     */
     public int successLedgerEntry(String paymentId) {
         PaymentRecord paymentRecord = paymentRepository.findByPaymentId(paymentId);
         paymentRecord.setStatus("COMPLETED");

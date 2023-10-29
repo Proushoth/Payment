@@ -17,19 +17,6 @@ public class PaymentService {
     @Autowired
     private APIContext apiContext;
 
-
-    /**
-     * createPayment
-     * @param total total amount payable
-     * @param currency currency code (USD)
-     * @param method payment method, PayPal mostly, scalable to other PSPs
-     * @param intent payment intent, sale usually
-     * @param description description of payment, enter order contents here preferably
-     * @param cancelUrl cancel url for PayPal to redirect to on successful transaction
-     * @param successUrl success url for PayPal to redirect to on successful transaction
-     * @return Payment object
-     * @throws PayPalRESTException
-     */
     public Payment createPayment(Double total,
                                  String currency,
                                  String method,

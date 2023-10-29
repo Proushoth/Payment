@@ -9,16 +9,6 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Map;
 
-/**
- * PaypalConfig
- * Configuration Bean for PayPal API.
- * <br><br>
- * ALL VALUES ARE STORED IN SECRETS.PROPERTIES FILE.
- * SECRETS.PROPERTIES IS NOT COMMITTED NOR SHARED AS IT CONTAINS SENSITIVE INFORMATION.
- * <br>
- * check out the ReadME.md for more info.
- *
- */
 @Configuration
 public class PaypalConfig {
 
